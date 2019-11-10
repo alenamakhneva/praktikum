@@ -8,16 +8,118 @@
     по фронтенду в Яндекс.Практикуме">
   <meta name="author" content="Алёна Махнёва">
   <title>NewsAnalyzer</title>
-  <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <!-- <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png"> -->
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css%>">
 </head>
 
 <body>
-  <div class="root">
-      ABOUT
-  </div>
-  
-  <script src="<%=htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <div class="page about">
+      <div class="content">
+        <header class="header">
+          <h1 class="project-title">NewsAnalyzer</h1>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li><a class="nav__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a></li>
+              <li><a class="nav__link" href="../about/about.html" target="_blank" rel="noopener noreferrer">О проекте</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section class="clients">
+            <h2 class="clients__title">Клиентам</h2>
+            <div class="clients__text">
+              <p class="clients__paragraph">Этот сайт — дипломный проект студента Яндкс.Практикума. 
+                Его цель — показать, чему научился студент, и какими технологиями владеет.</p>
+              <p class="clients__paragraph">Вёртска сайта выполнена по методологии БЭМ. Это делает 
+                сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность 
+                проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще
+                 и дешевле поддерживать.</p>
+              <p class="clients__paragraph">Карточки с новостям приходят с сервера и обрабатываются 
+                асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это 
+                повышает удобство использования сервиса.</p>
+              <p class="clients__paragraph">При создании проекта была использона сборка технологией 
+                Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, 
+                сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если 
+                посетители — пользователи старых операционных систем у них не будет проблем с
+                отображением. А значит потенциальная аудитория возрастает.</p>
+              <p class="clients__paragraph">Проект был проверен экспертами Яндекс.Практикума. И если
+                 вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+            </div>
+          </section>
+          <section class="tech">
+            <div class="tech__content">
+              <h2 class="tech__title">Используемые технологии</h2>
+              <div class="tech__container">
+                <div class="tech__item">
+                  <h3 class="tech__item-title">HTML</h3>
+                  <img class="tech__item-image" src="" alt="">
+                </div>
+                <div class="tech__item">
+                  <h3 class="tech__item-title">CSS</h3>
+                  <img class="tech__item-image" src="" alt="">
+                </div>
+                <div class="tech__item">
+                  <h3 class="tech__item-title">JavaScript</h3>
+                  <img class="tech__item-image" src="" alt="">
+                </div>
+                <div class="tech__item">
+                  <h3 class="tech__item-title">Webpack</h3>
+                  <img class="tech__item-image" src="" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="author">
+            <div class="author__container">
+              <img class="author__avatar" src="" alt="">
+              <div class="author__description">
+                <h2 class="author__title">Об авторе</h2>
+                <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать,
+                  как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+                <p class="author__text">Также можно рассказать о процессе обучения в Практикуме: чему вы
+                  тут научились и чем можете помочь потенциальным заказчикам.</p>
+              </div>
+            </div>
+          </section>
+          <section class="commits">
+            <div class="commits__container">
+              <h2 class="commits__title">История коммитов из GitHub</h2>
+              <a href="#" class="commits__link">Открыть GitHub</a>
+            </div>
+          <div class="commits__slider"></div>
+          <div class="commits__slider-control"></div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer__content">
+            <div class="footer__copyright"></div>
+            <nav class="footer__nav">
+              <ul class="nav__list">
+                <li class="footer__nav-link"><a href="./index.html" class="footer__nav-index" 
+                  target="_blank" rel="noopener noreferrer">Главная</a></li>
+                <li class="footer__nav-link"><a href="../about/about.html" class="footer__nav-about" 
+                  target="_blank" rel="noopener noreferrer">О проекте</a></li>
+                <li class="footer__nav-link"><a href="https://praktikum.yandex.ru/" 
+                  target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a></li>
+              </ul>
+            </nav>
+            <address class="footer__contacts">
+              <ul class="contacts-container">
+                <li class="contacts-item">
+                  <a href="#" class="contacts-item__link">
+                    <img src="" class="contacts-item__icon"></a>
+                </li>
+                <li class="contacts-item">
+                  <a href="#" class="contacts-item__link">
+                    <img src="" class="contacts-item__icon"></a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </footer>
+      </div>
+    </div>
+  <script src="<%=htmlWebpackPlugin.files.chunks.about.entry%>"></script>
 </body>
 
 </html>

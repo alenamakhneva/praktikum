@@ -8,16 +8,84 @@
     по фронтенду в Яндекс.Практикуме">
   <meta name="author" content="Алёна Махнёва">
   <title>NewsAnalyzer</title>
-  <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css%>">
 </head>
 
 <body>
-  <div class="root">
-      Analytics
-  </div>
-  
-  <script src="<%=htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <div class="page about">
+        <div class="content">
+          <header class="header">
+            <h1 class="project-title">NewsAnalyzer</h1>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li><a class="nav__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a></li>
+                <li><a class="nav__link" href="../about/about.html" target="_blank" rel="noopener noreferrer">О проекте</a></li>
+              </ul>
+            </nav>
+          </header>
+          <main>
+            <section class="query">
+              <div class="query__content">
+                <nav class="query__nav">
+                  <ul class="query__nav-items">
+                    <li class="query__nav-item">Главная</li>
+                    <li class="query__nav-item query__nav-item_analytics">/ Аналитика</li>
+                  </ul>
+                </nav>
+                <h2 class="query__title">Вы спросили «Путешествия»</h2>
+                <p class="query__info">Новостей за неделю:>
+                  <span class="query__counter">34 424</span>
+                </p>
+                <p class="query__info">Упоминаний в заголовках:>
+                  <span class="query__counter">235</span>
+                </p>
+              </div>
+            </section>
+            <section class="chart">
+              <div class="chart__content">
+                <h2 class="chart__title">Аналитика по дням</h2>
+                <div class="chart__container">
+                  <div class="chart__header">
+                    <h3 class="chart__title">ДАТА (АВГУСТ)</h3>
+                    <h3 class="chart__title">КОЛ-ВО УПОМИНАНИЙ</h3>
+                  </div>
+                  <img src="" class="chart__division" alt="">
+                  <div class="chart__dates"></div>
+                  <div class="chart__mentions"></div>  
+                </div>
+            </section>
+          </main>
+          <footer class="footer">
+            <div class="footer__content">
+              <div class="footer__copyright"></div>
+              <nav class="footer__nav">
+                <ul class="nav__list">
+                  <li class="footer__nav-link"><a href="./index.html" class="footer__nav-index" 
+                    target="_blank" rel="noopener noreferrer">Главная</a></li>
+                  <li class="footer__nav-link"><a href="../about/about.html" class="footer__nav-about" 
+                    target="_blank" rel="noopener noreferrer">О проекте</a></li>
+                  <li class="footer__nav-link"><a href="https://praktikum.yandex.ru/" 
+                    target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a></li>
+                </ul>
+              </nav>
+              <address class="footer__contacts">
+                <ul class="contacts-container">
+                  <li class="contacts-item">
+                    <a href="#" class="contacts-item__link">
+                      <img src="" class="contacts-item__icon"></a>
+                  </li>
+                  <li class="contacts-item">
+                    <a href="#" class="contacts-item__link">
+                      <img src="" class="contacts-item__icon"></a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </footer>
+        </div>
+      </div>
+  <script src="<%=htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
 
 </html>

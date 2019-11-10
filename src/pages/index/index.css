@@ -1,7 +1,10 @@
-/* @import url(../vendor/normalize.css);
-@import url(../vendor/fonts.css); */
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
 
-.main {
-color: red;
-background-color: blue;
+div {
+    border: 1px solid gold;
+    
+        font-family: 'Roboto';
+        font-style:  normal;
+        font-weight: 400;
 }

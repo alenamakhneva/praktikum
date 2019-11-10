@@ -10,7 +10,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
-        main: './src/pages/index/index.js',
+        index: './src/pages/index/index.js',
         about: './src/pages/about/about.js',
         analytics: './src/pages/analytics/analytics.js'
     },
@@ -33,7 +33,7 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            // publicPath: '../'
+                             publicPath: '../'
                         }
                     },
                     'css-loader',
@@ -57,7 +57,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'style/[name].[contenthash].css'
+            filename: './style/[name].[contenthash].css'
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
