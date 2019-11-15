@@ -1,0 +1,19 @@
+@import url('./__section/content__section.css');
+@import url('./__wrapper/content__wrapper.css');
+
+.content {
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}

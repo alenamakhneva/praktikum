@@ -1,0 +1,14 @@
+.search__form {
+    display: flex;
+    flex-direction: row;
+        justify-content: space-between;
+    width: 608px;
+    height: 64px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    border-radius: 100px;
+    z-index: 1;
+    opacity: 1;
+    
+}

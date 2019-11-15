@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,100 +11,142 @@
   <title>NewsAnalyzer</title>
   <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css%>">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css" />
 </head>
 
 <body>
-  <div class="page index">
-    <div class="content">
-      <header class="header">
-        <h1 class="project-title">NewsAnalyzer</h1>
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li><a class="nav__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a></li>
-            <li><a class="nav__link" href="../about/about.html" target="_blank" rel="noopener noreferrer">О проекте</a></li>
-          </ul>
+  <main class="content">
+    <div class="wrapper">
+      <header class="header section">
+        <h1 class="header__title">NewsAnalyzer</h1>
+        <nav class="header__nav">
+          <div class="header__nav-item">
+            <a class="header__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a>
+            <div class="header__link-underliner"></div>
+          </div>
+          <div class="header__nav-item">
+            <a class="header__link" href="./about.html" target="_blank" rel="noopener noreferrer">О проекте</a>
+            <div class=""></div>
+          </div>
         </nav>
       </header>
-      <main>
-        <section class="search">
+      <section class="search section">
+        <div class="search__container">
           <h2 class="search__title">Что в мире творится?</h2>
           <p class="search__instruction">Введите в поиске любую тему и узнайте, насколько популярной
             она была в новостях за прошедшую неделю.</p>
-          <img class="search__image">
           <form class="search__form" id="search-form">
             <input class="search__field" name="search-field" id="search-field" type="search"
               placeholder="Введите тему новости">
             <button class="search__button" name="search-button" id="search-button">Искать</button>
           </form>
-        </section>
-        <section class="search-results">
-          <div class="search-progress search-progress_hidden">
-            <div class="search-progress__preloader"></div>
-            <p class="search-progress__caption">Идёт поиск новостей</p>
-          </div>
-          <div class="search-noresults search-noresults_hidden">
-            <img class="search-noresults__image"></img>
-            <h2 class="search-noresults__title">Ничего не найдено</h2>
-            <p class="search-noresults__text">К сожалению, по вашему запросу ничего не найдено</p>
-          </div>
-          <div class="news-grid news-grid_hidden">
-            <h2 class="news-grid__title">Результаты поиска</h2>
-            <a href="../analytics/analytics.html" class="news-grid__link" target="_blank" 
-              rel="noopener noreferrer">Посмотреть аналитику</a>
-            <div class="news-grid__container">
-              <div class="news-grid__item">
-                <img class="item__image">
-                <p class="item__date"></p>
-                <h3 class="item__title"></h3>
-                <p class="item__text"></p>
-                <a href="#" class="item__link"></a>
-              </div>
-              <button class="news-grid__button" id="">Показать ещё</button>
-            </div>
-          </div>
-        </section>
-        <section class="author">
-          <div class="author__container">
-            <img class="author__avatar" src="" alt="">
-            <div class="author__description">
-              <h2 class="author__title">Об авторе</h2>
-              <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать,
-                как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-              <p class="author__text">Также можно рассказать о процессе обучения в Практикуме: чему вы
-                тут научились и чем можете помочь потенциальным заказчикам.</p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__content">
-          <div class="footer__copyright"></div>
-          <nav class="footer__nav">
-            <ul class="nav__list">
-              <li class="footer__nav-link"><a href="./index.html" class="footer__nav-index" 
-                target="_blank" rel="noopener noreferrer">Главная</a></li>
-              <li class="footer__nav-link"><a href="../about/about.html" class="footer__nav-about" 
-                target="_blank" rel="noopener noreferrer">О проекте</a></li>
-              <li class="footer__nav-link"><a href="https://praktikum.yandex.ru/" 
-                target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a></li>
-            </ul>
-          </nav>
-          <address class="footer__contacts">
-            <ul class="contacts-container">
-              <li class="contacts-item">
-                <a href="#" class="contacts-item__link">
-                  <img src="" class="contacts-item__icon"></a>
-              </li>
-              <li class="contacts-item">
-                <a href="#" class="contacts-item__link">
-                  <img src="" class="contacts-item__icon"></a>
-              </li>
-            </ul>
-          </address>
         </div>
-      </footer>
+      </section>
     </div>
-  </div>
+    <section class="preloader section">
+      <i class="circle-preloader"></i>
+      <p class="preloader__caption">Идёт поиск новостей...</p>
+    </section>
+    <section class="noresults section">
+      <div class="noresults__container">
+        <img class="noresults__image" src="<%=require('../../images/not-found_v1.png')%>" alt="sad"></img>
+        <h2 class="noresults__title">Ничего не найдено</h2>
+        <p class="noresults__text">К сожалению, по вашему запросу ничего не найдено</p>
+      </div>
+    </section>
+    <section class="news-grid section">
+      <div class="news-grid__header">
+        <h2 class="news-grid__title">Результаты поиска</h2>
+        <form class="news-grid__form" action="./analytics.html" method="" id="analytics" target="_blank"
+          rel="noopener noreferrer">
+          <input type="hidden" name="date" value="">
+          <input type="hidden" name="lorem" value="">
+          <button type="submit" class="news-grid__link">Посмотреть аналитику</button>
+        </form>
+      </div>
+      <div class="news-grid__container">
+        <div class="news-grid__card">
+          <img class="news-grid__card-image" src="<%=require('../../images/image_08.png')%>">
+          <p class="news-grid__card-date">2 августа, 2019</p>
+          <h3 class="news-grid__card-title">Национальное достояние – парки</h3>
+          <p class="news-grid__card-text">В 2016 году Америка отмечала важный юбилей: сто лет
+            назад здесь начала складываться система национальных парков – охраняемых территорий,
+            где и сегодня каждый может приобщиться к природе.</p>
+          <a href="#" class="news-grid__card-link">Лента.ру</a>
+        </div>
+        <div class="news-grid__card">
+          <img class="news-grid__card-image" src="<%=require('../../images/image_04.png')%>">
+          <p class="news-grid__card-date">2 августа, 2019</p>
+          <h3 class="news-grid__card-title">Лесные огоньки: история одной фотографии</h3>
+          <p class="news-grid__card-text">Фотограф отвлеклась от освещения суровой политической
+            реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+          <a href="#" class="news-grid__card-link">Медуза</a>
+        </div>
+        <div class="news-grid__card">
+          <img class="news-grid__card-image" src="<%=require('../../images/image_07.png')%>">
+          <p class="news-grid__card-date">2 августа, 2019</p>
+          <h3 class="news-grid__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+          <p class="news-grid__card-text">Знаменитый фотограф снимает первозданные леса России,
+            чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+            тайгу, где...</p>
+          <a href="#" class="news-grid__card-link">Риа</a>
+        </div>
+        <div class="news-grid__card">
+          <img class="news-grid__card-image" src="<%=require('../../images/image_01.png')%>">
+          <p class="news-grid__card-date">2 августа, 2019</p>
+          <h3 class="news-grid__card-title">Национальное достояние – парки</h3>
+          <p class="news-grid__card-text">В 2016 году Америка отмечала важный юбилей: сто лет
+            назад здесь начала складываться система национальных парков – охраняемых территорий,
+            где и сегодня каждый может приобщиться к природе.</p>
+          <a href="#" class="news-grid__card-link">Лента.ру</a>
+        </div>
+        <div class="news-grid__card">
+          <img class="news-grid__card-image" src="<%=require('../../images/image_05.png')%>">
+          <p class="news-grid__card-date">2 августа, 2019</p>
+          <h3 class="news-grid__card-title">Лесные огоньки: история одной фотографии</h3>
+          <p class="news-grid__card-text">Фотограф отвлеклась от освещения суровой политической
+            реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+          <a href="#" class="news-grid__card-link">Медуза</a>
+        </div>
+        <div class="news-grid__card">
+          <img class="news-grid__card-image" src="<%=require('../../images/image_07.png')%>">
+          <p class="news-grid__card-date">2 августа, 2019</p>
+          <h3 class="news-grid__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+          <p class="news-grid__card-text">Знаменитый фотограф снимает первозданные леса России,
+            чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+            тайгу, где...</p>
+          <a href="#" class="news-grid__card-link">Риа</a>
+        </div>
+      </div>
+      <form class="news-grid__more" id="grid-form">
+        <button class="news-grid__button" id="">Показать ещё</button>
+      </form>
+    </section>
+    <section class="author section">
+      <img class="author__avatar" src="<%=require('../../images/image-03.png')%>" alt="avatar">
+      <div class="author__description">
+        <h2 class="author__title">Об авторе</h2>
+        <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать,
+          как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="author__text">Также можно рассказать о процессе обучения в Практикуме: чему вы
+          тут научились и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </section>
+    <footer class="footer section">
+      <p class="footer__copyright">© 2019 Supersite</p>
+      <nav class="footer__nav">
+        <a href="./index.html" class="footer__nav-link" target="_blank" rel="noopener noreferrer">Главная</a>
+        <a href="./about.html" class="footer__nav-link" target="_blank" rel="noopener noreferrer">О проекте</a>
+        <a href="https://praktikum.yandex.ru/" class="footer__nav-link" target="_blank"
+          rel="noopener noreferrer">Яндекс.Практикум</a>
+      </nav>
+      <address class="footer__contacts">
+        <a href="#" class="footer__contact footer__contact_fb"></a>
+        <a href="#" class="footer__contact footer__contact_gh"></a>
+      </address>
+    </footer>
+  </main>
   <script src="<%=htmlWebpackPlugin.files.chunks.index.entry%>"></script>
 </body>
+
 </html>

@@ -1,0 +1,20 @@
+.news-grid__button {
+    background: #FFFFFF;
+    border-radius: 80px;
+    width: 288px;
+    height: 64px;
+    margin: 0 auto;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    color: #1A1B22;
+}

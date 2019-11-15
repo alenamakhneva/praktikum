@@ -1,0 +1,22 @@
+@import url('./__header/news-grid__header.css');
+@import url('./__title/news-grid__title.css');
+@import url('./__link/news-grid__link.css');
+@import url('./__container/news-grid__container.css');
+@import url('./__card/news-grid__card.css');
+@import url('./__form/news-grid__form.css');
+@import url('./__card-image/news-grid__card-image.css');
+@import url('./__card-date/news-grid__card-date.css');
+@import url('./__card-title/news-grid__card-title.css');
+@import url('./__card-text/news-grid__card-text.css');
+@import url('./__card-link/news-grid__card-link.css');
+@import url('./__button/news-grid__button.css');
+
+.news-grid {
+    display: flex;
+    flex-direction: column; 
+    background-color: #F5F6F7;
+}
+
+.news-grid.news-grid_hidden {
+    display: none;
+}

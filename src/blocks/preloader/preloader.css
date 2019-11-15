@@ -1,0 +1,38 @@
+@import url('./__caption/preloader__caption.css');
+
+.preloader {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	height: 122px;
+	background: #F5F6F7;
+	z-index: 2;
+
+	overflow: hidden;
+}
+
+.circle-preloader {
+	display: block;
+	width: 70px;
+	height: 70px;
+	
+	background-image: url('../../images/Ellipse.png');
+	background-size: cover;
+	border-radius: 50%;
+
+	position: relative;
+
+	margin: 0 auto 24px;
+
+	animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.preloader.preloader_hidden {
+	display: none;
+}

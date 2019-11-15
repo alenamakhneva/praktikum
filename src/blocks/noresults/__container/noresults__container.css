@@ -1,0 +1,7 @@
+.noresults__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    margin: 6px auto 0;
+}

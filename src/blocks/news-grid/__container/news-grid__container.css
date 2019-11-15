@@ -1,0 +1,8 @@
+.news-grid__container {
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 16px 16px;
+    justify-content: space-evenly;
+
+}

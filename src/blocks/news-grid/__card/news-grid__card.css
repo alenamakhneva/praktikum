@@ -1,0 +1,6 @@
+.news-grid__card {
+    width: 400px;
+    height: 576px;
+    display: flex;
+    flex-direction: column;
+}

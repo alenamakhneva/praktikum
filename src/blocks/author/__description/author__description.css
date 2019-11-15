@@ -1,0 +1,6 @@
+.author__description {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    
+}

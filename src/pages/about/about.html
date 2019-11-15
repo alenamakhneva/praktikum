@@ -8,7 +8,7 @@
     по фронтенду в Яндекс.Практикуме">
   <meta name="author" content="Алёна Махнёва">
   <title>NewsAnalyzer</title>
-  <!-- <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png"> -->
+  <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css%>">
 </head>
 
@@ -16,11 +16,11 @@
     <div class="page about">
       <div class="content">
         <header class="header">
-          <h1 class="project-title">NewsAnalyzer</h1>
+          <h1 class="header__title">NewsAnalyzer</h1>
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li><a class="nav__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a></li>
-              <li><a class="nav__link" href="../about/about.html" target="_blank" rel="noopener noreferrer">О проекте</a></li>
+              <li><a class="nav__link" href="./about.html" target="_blank" rel="noopener noreferrer">О проекте</a></li>
             </ul>
           </nav>
         </header>
@@ -84,7 +84,7 @@
           <section class="commits">
             <div class="commits__container">
               <h2 class="commits__title">История коммитов из GitHub</h2>
-              <a href="#" class="commits__link">Открыть GitHub</a>
+              <a href="#" class="commits__link" target="_blank" rel="noopener noreferrer">Открыть GitHub</a>
             </div>
           <div class="commits__slider"></div>
           <div class="commits__slider-control"></div>
@@ -97,7 +97,7 @@
               <ul class="nav__list">
                 <li class="footer__nav-link"><a href="./index.html" class="footer__nav-index" 
                   target="_blank" rel="noopener noreferrer">Главная</a></li>
-                <li class="footer__nav-link"><a href="../about/about.html" class="footer__nav-about" 
+                <li class="footer__nav-link"><a href="./about.html" class="footer__nav-about" 
                   target="_blank" rel="noopener noreferrer">О проекте</a></li>
                 <li class="footer__nav-link"><a href="https://praktikum.yandex.ru/" 
                   target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a></li>
@@ -106,11 +106,11 @@
             <address class="footer__contacts">
               <ul class="contacts-container">
                 <li class="contacts-item">
-                  <a href="#" class="contacts-item__link">
+                  <a href="#" class="contacts-item__link" target="_blank" rel="noopener noreferrer">
                     <img src="" class="contacts-item__icon"></a>
                 </li>
                 <li class="contacts-item">
-                  <a href="#" class="contacts-item__link">
+                  <a href="#" class="contacts-item__link" target="_blank" rel="noopener noreferrer">
                     <img src="" class="contacts-item__icon"></a>
                 </li>
               </ul>

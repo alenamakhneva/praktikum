@@ -1,0 +1,17 @@
+.noresults__text {
+    height: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+
+    /* simulator/gray/text */
+
+    color: #B6BCBF;
+}

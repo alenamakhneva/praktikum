@@ -1,0 +1,10 @@
+@import url('./__avatar/author__avatar.css');
+@import url('./__description/author__description.css');
+@import url('./__title/author__title.css');
+@import url('./__text/author__text.css');
+
+.author {
+    display: flex;
+    flex-direction: row;
+    
+}

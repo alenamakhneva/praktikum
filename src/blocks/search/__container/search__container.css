@@ -1,0 +1,10 @@
+.search__container {
+    width: 608px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    
+}

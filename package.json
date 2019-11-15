@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "eslint": "^6.6.0"
+    "eslint": "^6.6.0",
+    "swiper": "^5.2.0"
   }
 }
