@@ -3,10 +3,14 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #B6BCBF;
+    color: #B6BCBF; 
     text-decoration: none;
 }
 
-.header__link:hover {
+.header__link.header__link_index {
     color: white;
+}
+
+.header__link.header__link_about {
+    color: #1A1B22;
 }

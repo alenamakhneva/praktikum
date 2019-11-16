@@ -1,0 +1,12 @@
+.glide__slide-name {
+    margin: 0;
+    width: 100%;
+    height: 30px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+
+    color: #1A1B22;
+}

@@ -1,0 +1,13 @@
+.clients__text {
+    width: 68%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    color: #1A1B22;
+
+    margin: 24px auto 0 0;
+}

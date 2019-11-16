@@ -3,3 +3,7 @@
     height: 3px;
     background-color: #FFFFFF;
 }
+
+.header__link-underliner_about {
+    background: #1A1B22;
+}

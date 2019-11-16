@@ -1,17 +1,17 @@
 .news-grid__card-link {
     font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
 
-letter-spacing: 0.4px;
-text-transform: uppercase;
-text-decoration: none;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: none;
 
-/* simulator/gray/text */
-margin: auto 24px 24px;
+    /* simulator/gray/text */
+    margin: auto 24px 24px;
 
-color: #B6BCBF;
+    color: #B6BCBF;
 }

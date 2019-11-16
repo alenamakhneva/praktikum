@@ -1,11 +1,13 @@
-.header__title {
+.title.header__title {
     width: 200px;
     height: 24px;
     display: flex;
-    font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 24px;
-margin: 30px auto 26px 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 30px auto 26px 0;
+}
+
+.header__title.header__title_about {
+    color: #1A1B22;
 }
