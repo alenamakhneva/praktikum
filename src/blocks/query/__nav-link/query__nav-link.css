@@ -1,0 +1,13 @@
+.query__nav-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1A1B22;
+        text-decoration: none;
+        padding-right: 5px;
+    }
+    
+.query__nav-link.query__nav-link_analytics {
+        color: #B6BCBF;
+    }

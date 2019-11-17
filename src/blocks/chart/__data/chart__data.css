@@ -1,0 +1,5 @@
+.chart__data {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0;
+}

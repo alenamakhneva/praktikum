@@ -1,0 +1,20 @@
+.chart__date, .chart__date-day, .chart__date-figure {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.chart__date {
+    width: 104px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.chart__date:first-of-type, .chart__date:last-of-type {
+    height: 52px;
+}
+
+.chart__date:first-of-type {
+    line-height: 24px;
+    align-items: flex-start;
+}
+

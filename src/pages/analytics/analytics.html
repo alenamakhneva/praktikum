@@ -1,92 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Анализатор новостей - дипломный проект 
-    по фронтенду в Яндекс.Практикуме">
+      по фронтенду в Яндекс.Практикуме">
   <meta name="author" content="Алёна Махнёва">
   <title>NewsAnalyzer</title>
   <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css%>">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css" />
+
 </head>
 
 <body>
-    <div class="page about">
-        <div class="content">
-          <header class="header">
-            <h1 class="header__title">NewsAnalyzer</h1>
-            <nav class="header__nav nav">
-              <ul class="nav__list">
-                <li><a class="nav__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a></li>
-                <li><a class="nav__link" href="../about/about.html" target="_blank" rel="noopener noreferrer">О проекте</a></li>
-              </ul>
-            </nav>
-          </header>
-          <main>
-            <section class="query">
-              <div class="query__content">
-                <nav class="query__nav">
-                  <ul class="query__nav-items">
-                    <li class="query__nav-item"><a href="./index.html" target="_blank" rel="noopener noreferrer"
-                      class="">Главная</a></li>
-                    <li class="query__nav-item query__nav-item_analytics"><a href="./analytics.html"target="_blank" 
-                      rel="noopener noreferrer" class=""></a>/ Аналитика</a></li>
-                  </ul>
-                </nav>
-                <h2 class="query__title">Вы спросили «Путешествия»</h2>
-                <p class="query__info">Новостей за неделю:
-                  <span class="query__counter">34 424</span>
-                </p>
-                <p class="query__info">Упоминаний в заголовках:
-                  <span class="query__counter">235</span>
-                </p>
-              </div>
-            </section>
-            <section class="chart">
-              <div class="chart__content">
-                <h2 class="chart__title">Аналитика по дням</h2>
-                <div class="chart__container">
-                  <div class="chart__header">
-                    <h3 class="chart__title">ДАТА (АВГУСТ)</h3>
-                    <h3 class="chart__title">КОЛ-ВО УПОМИНАНИЙ</h3>
-                  </div>
-                  <img src="" class="chart__division" alt="">
-                  <div class="chart__dates"></div>
-                  <div class="chart__mentions"></div>  
-                </div>
-            </section>
-          </main>
-          <footer class="footer">
-            <div class="footer__content">
-              <div class="footer__copyright"></div>
-              <nav class="footer__nav">
-                <ul class="nav__list">
-                  <li class="footer__nav-link"><a href="./index.html" class="footer__nav-index" 
-                    target="_blank" rel="noopener noreferrer">Главная</a></li>
-                  <li class="footer__nav-link"><a href="./about.html" class="footer__nav-about" 
-                    target="_blank" rel="noopener noreferrer">О проекте</a></li>
-                  <li class="footer__nav-link"><a href="https://praktikum.yandex.ru/" 
-                    target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a></li>
-                </ul>
-              </nav>
-              <address class="footer__contacts">
-                <ul class="contacts-container">
-                  <li class="contacts-item">
-                    <a href="#" class="contacts-item__link">
-                      <img src="" class="contacts-item__icon"></a>
-                  </li>
-                  <li class="contacts-item">
-                    <a href="#" class="contacts-item__link">
-                      <img src="" class="contacts-item__icon"></a>
-                  </li>
-                </ul>
-              </address>
-            </div>
-          </footer>
+  <div class="content">
+    <header class="header section header_about">
+      <h1 class="header__title title">NewsAnalyzer</h1>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a class="header__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a>
         </div>
-      </div>
+        <div class="header__nav-item">
+          <a class="header__link" href="./about.html" target="_blank" rel="noopener noreferrer">О
+            проекте</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="query section">
+        <nav class="query__nav">
+          <a href="./index.html" target="_blank" rel="noopener noreferrer" class="query__nav-link">Главная</a>
+          <a href="./analytics.html" target="_blank" rel="noopener noreferrer"
+            class="query__nav-link query__nav-link_analytics">/ Аналитика</a>
+        </nav>
+        <h2 class="query__title title">Вы спросили: <span class="query__word">«Путешествия»</span></h2>
+        <p class="query__info">Новостей за неделю:
+          <span class="query__counter" id="week">34 424</span>
+        </p>
+        <p class="query__info">Упоминаний в заголовках:
+          <span class="query__counter" id="headers">235</span>
+        </p>
+      </section>
+      <section class="chart section">
+        <h2 class="chart__title title">Аналитика по дням</h2>
+        <div class="chart__container">
+          <div class="chart__header">
+            <h3 class="chart__column-title chart__column-title_date">дата <span class="chart__month">(август)</span>
+            </h3>
+            <h3 class="chart__column-title">кол-во упоминаний</h3>
+          </div>
+          <div class="chart__axis-wrapper">
+            <span class="chart__axis-tick chart__axis-tick_zero">0</span>
+            <div class="chart__axis">
+              <span class="chart__axis-tick chart__axis-tick_quarter">25</span>
+              <span class="chart__axis-tick chart__axis-tick_half">50</span>
+              <span class="chart__axis-tick chart__axis-tick_twothird">75</span>
+              <span class="chart__axis-tick chart__axis-tick_hundred">100</span>
+            </div>
+          </div>
+          <div class="chart__data">
+            <div class="chart__dates">
+              <div class="chart__date"><span class="chart__date-figure">19</span>
+                <span class="chart__date-day">, пн</span></div>
+              <div class="chart__date"><span class="chart__date-figure">20</span>
+                <span class="chart__date-day">, вт</span></div>
+              <div class="chart__date"><span class="chart__date-figure">21</span>
+                <span class="chart__date-day">, ср</span></div>
+              <div class="chart__date"><span class="chart__date-figure">22</span>
+                <span class="chart__date-day">, чт</span></div>
+              <div class="chart__date"><span class="chart__date-figure">23</span>
+                <span class="chart__date-day">, пт</span></div>
+              <div class="chart__date"><span class="chart__date-figure">24</span>
+                <span class="chart__date-day">, сб</span></div>
+              <div class="chart__date"><span class="chart__date-figure">25</span>
+                <span class="chart__date-day">, вс</span></div>
+            </div>
+            <div class="chart__mentions">
+              <div class="chart__mentions-bar"><span class="chart__mentions-number" id="monday">15</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number" id="tuesday">18</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number" id="wednesday">11</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number" id="thursday">39</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number" id="friday">45</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number" id="saturday">73</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number" id="sunday">34</span></div>
+            </div>
+          </div>
+          <div class="chart__axis-wrapper">
+            <span class="chart__axis-tick chart__axis-tick_zero">0</span>
+            <div class="chart__axis">
+              <span class="chart__axis-tick">25</span>
+              <span class="chart__axis-tick">50</span>
+              <span class="chart__axis-tick">75</span>
+              <span class="chart__axis-tick">100</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <p class="footer__copyright">© 2019 Supersite</p>
+      <nav class="footer__nav">
+        <a href="./index.html" class="footer__nav-link" target="_blank" rel="noopener noreferrer">Главная</a>
+        <a href="./about.html" class="footer__nav-link" target="_blank" rel="noopener noreferrer">О проекте</a>
+        <a href="https://praktikum.yandex.ru/" class="footer__nav-link" target="_blank"
+          rel="noopener noreferrer">Яндекс.Практикум</a>
+      </nav>
+      <address class="footer__contacts">
+        <a href="#" class="footer__contact footer__contact_fb"></a>
+        <a href="#" class="footer__contact footer__contact_gh"></a>
+      </address>
+    </footer>
+  </div>
   <script src="<%=htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
 

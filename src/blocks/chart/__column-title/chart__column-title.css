@@ -1,0 +1,22 @@
+.chart__column-title {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    /* or 133% */
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: #B6BCBF;
+
+    margin: 0;
+}
+
+.chart__column-title_date {
+    width: 104px;
+}

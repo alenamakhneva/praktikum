@@ -1,0 +1,23 @@
+.chart__axis-tick {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    /* or 133% */
+
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: #B6BCBF;
+}
+
+.chart__axis-tick.chart__axis-tick_zero {
+    width: 104px;
+    text-align: right;
+}
+
+

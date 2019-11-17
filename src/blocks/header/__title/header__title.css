@@ -6,8 +6,9 @@
     font-size: 20px;
     line-height: 24px;
     margin: 30px auto 26px 0;
+    color: #1A1B22;
 }
 
-.header__title.header__title_about {
-    color: #1A1B22;
+.header__title.header__title_index {
+    color: #FFFFFF;
 }

@@ -1,0 +1,29 @@
+.chart__mentions-number {
+    height: 24px;
+    background: #2F71E5;
+    padding-left: 6px;
+    /* top: calc(50% - 24px/2); */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    /* or 133% */
+
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#monday { width: 15%; }
+#tuesday { width: 18%; }
+#wednesday { width: 11%; }
+#thursday { width: 39%; }
+#friday { width: 45%; }
+#saturday { width: 73%; }
+#sunday { width: 34%; }

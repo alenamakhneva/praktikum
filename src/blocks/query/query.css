@@ -1,0 +1,14 @@
+@import url(./__nav/query__nav.css);
+@import url(./__nav-link/query__nav-link.css);
+@import url(./__title/query__title.css);
+@import url(./__counter/query__counter.css);
+@import url(./__info/query__info.css);
+
+
+
+
+.query.section {
+    padding-top: 40px; 
+    display: flex;
+    flex-direction: column;
+}
