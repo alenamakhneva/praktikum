@@ -1,14 +1,30 @@
-@import url(./__nav/query__nav.css);
-@import url(./__nav-link/query__nav-link.css);
-@import url(./__title/query__title.css);
-@import url(./__counter/query__counter.css);
-@import url(./__info/query__info.css);
+@import url('./__nav/query__nav.css');
+@import url('./__nav-link/query__nav-link.css');
+@import url('./__wrapper/query__wrapper.css');
+@import url('./__title/query__title.css');
+@import url('./__counter/query__counter.css');
+@import url('./__info/query__info.css');
+@import url('./__word/query__word.css');
 
 
 
-
-.query.section {
-    padding-top: 40px; 
+.query {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .query {
+        padding: 32px 40px 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .query {
+        display: block;
+        padding: 16px;
+        flex-wrap: wrap;
+        order: 1;
+    }
 }

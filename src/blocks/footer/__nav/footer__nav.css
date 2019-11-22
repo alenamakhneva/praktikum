@@ -2,5 +2,14 @@
     display: flex;
     flex-direction: row;
     padding-top: 30px;
-    
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 375px) {
+    .footer__nav {
+        order: 1;
+        flex-direction: column;
+        padding: 20px auto 0 0;
+    }
 }

@@ -1,11 +1,15 @@
 .glide__slide-frame {
-    width: 400px;
     height: 288px;
     display: flex;
     flex-direction: column;
     padding: 24px;
-    margin: 0 8px;
     background: #FFFFFF;
     border-radius: 16px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .glide__slide-frame {
+        padding: 16px;
+    }
 }

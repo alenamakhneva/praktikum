@@ -8,8 +8,6 @@
 }
 
 .chart__axis-wrapper {
-    /* width: 100%; */
     display: flex;
     flex-direction: row;
-    
 }

@@ -4,3 +4,17 @@
     grid-gap: 40px;
     justify-content: start;
 }
+
+@media screen and (max-width: 768px) {
+    .tech__container {
+        margin-top: 40px;
+        justify-content: stretch;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tech__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}

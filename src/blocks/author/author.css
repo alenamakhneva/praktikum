@@ -6,5 +6,12 @@
 .author {
     display: flex;
     flex-direction: row;
-    
+
+}
+
+@media screen and (max-width: 375px) {
+    .author {
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }

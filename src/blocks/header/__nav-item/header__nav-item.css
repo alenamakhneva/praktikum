@@ -2,7 +2,14 @@
     display: inline-block;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 34px; 
-    /* align-items: center; */
-    
+    padding-left: 34px;
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .header__nav-item {
+        padding-left: 11px;
+
+    }
 }

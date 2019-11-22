@@ -7,3 +7,16 @@
 .header__link-underliner_about {
     background: #1A1B22;
 }
+
+@media screen and (max-width: 768px) {
+    .header__link-underliner {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .header__link-underliner {
+        margin-top: 13px;
+    }
+}

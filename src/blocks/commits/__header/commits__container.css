@@ -5,3 +5,18 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .commits__header {
+        padding: 0 40px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .commits__header {
+        padding: 0 16px;
+        flex-direction: column;
+    }
+}

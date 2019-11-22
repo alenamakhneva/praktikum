@@ -1,4 +1,4 @@
-@import url(./__title/tech__title.css);
+@import url('./__title/tech__title.css');
 @import url(./__container/tech__container.css);
 @import url(./__item/tech__item.css);
 @import url(./__item-title/tech__item-title.css);
@@ -8,5 +8,12 @@
 
 .tech {
     display: flex;
+    flex-direction: row;
     background: #F5F6F7;
+}
+
+@media screen and (max-width: 768px) {
+    .tech {
+        flex-direction: column;
+    }
 }

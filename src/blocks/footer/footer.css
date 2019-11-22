@@ -9,7 +9,22 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;  
+    justify-content: space-between;
     padding: 0 104px;
-    
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: 64px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        height: 100%;
+        padding: 0 16px;
+        flex-wrap: wrap;
+
+    }
 }

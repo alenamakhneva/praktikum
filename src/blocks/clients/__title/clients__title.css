@@ -1,10 +1,11 @@
 .clients__title {
-    height: 46px;
-    /* font-size: 40px;
-    line-height: 46px; */
-    /* identical to box height, or 115% */
-
     color: #1A1B22;
-
     margin: 0 0 auto;
+}
+
+
+@media screen and (max-width: 375px) {
+    .clients__title {
+        margin: 0;
+    }
 }

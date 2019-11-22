@@ -11,3 +11,10 @@
 
     margin: 24px auto 0 0;
 }
+
+@media screen and (max-width: 768px) {
+    .clients__text {
+        width: 100%;
+        margin: 16px auto 0 0;
+    }
+}

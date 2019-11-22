@@ -15,7 +15,7 @@
 	display: block;
 	width: 70px;
 	height: 70px;
-	
+
 	background-image: url('../../images/Ellipse.png');
 	background-size: cover;
 	border-radius: 50%;
@@ -35,4 +35,11 @@
 
 .preloader.preloader_hidden {
 	display: none;
+}
+
+
+@media screen and (max-width: 375px) {
+	.preloader {
+		display: none;
+	}
 }

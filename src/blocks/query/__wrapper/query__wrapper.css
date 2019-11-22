@@ -1,0 +1,10 @@
+.query__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 375px) {
+    .query__wrapper {
+        flex-direction: column;
+    }
+}

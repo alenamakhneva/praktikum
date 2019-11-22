@@ -11,3 +11,15 @@
 
     color: #1A1B22;
 }
+
+@media screen and (max-width: 768px) {
+    .news-grid__card-text {
+        margin: 10px 24px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .news-grid__card-text {
+        margin: 10px 16px;
+    }
+}

@@ -4,10 +4,8 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    /* identical to box height, or 133% */
-
+    margin: 0 104px 0 auto;
     padding-right: 20px;
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -16,9 +14,38 @@
     cursor: pointer;
 
     background-image: url('../../../images/arrow.png');
-    background-position: right center; 
+    background-position: right center;
     background-repeat: no-repeat;
     color: #1A1B22;
     background-color: #F5F6F7;
     border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .commits__link {
+        margin: 0 40px 0 auto;
+        align-items: flex-start;
+        text-align: start;
+        background-position: right 5px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .commits__link {
+        position: relative;
+        margin: 24px 16px 0;
+        width: calc(100% - 32px);
+        height: 56px;
+        background-image: none;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        order: 3;
+        align-items: center;
+        text-align: center;
+        padding-left: 25%;
+
+
+    }
 }

@@ -1,7 +1,15 @@
 .search__title {
-height: 128px;
-margin: 0 auto;
-font-size: 60px;
-line-height: 64px;
-margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    font-size: 60px;
+    line-height: 64px;
+}
+
+@media screen and (max-width: 768px) {
+    .search__title {
+        width: 100%;
+        font-size: 36px;
+        line-height: 40px;
+    }
 }

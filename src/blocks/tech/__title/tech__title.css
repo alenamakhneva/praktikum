@@ -1,10 +1,16 @@
 .tech__title {
-    width: 344px;
-    height: 92px;
-    /* font-size: 40px;
-    line-height: 46px; */
-    /* or 115% */
     color: #1A1B22;
-
     margin: 0 176px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+    .tech__title {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tech__title {
+        margin: 32px 16px 40px;
+    }
 }

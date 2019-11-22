@@ -15,8 +15,6 @@
 
 .glide__slides {
   position: relative;
-  width: 100%;
-  height: 288px;
   list-style: none;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -35,14 +33,13 @@
 }
 
 .glide__slide {
-  width: 400px;
-  height: 288px;
+  height: 100%;
   flex-shrink: 0;
   white-space: normal;
   user-select: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
-  
+
 }
 
 
@@ -61,7 +58,15 @@
 .glide__bullets {
   -webkit-touch-callout: none;
   user-select: none;
+
 }
+
+@media screen and (max-width: 375px) {
+  .glide__bullets {
+    padding-bottom: 24px;
+  }
+}
+
 
 .glide--rtl {
   direction: rtl;

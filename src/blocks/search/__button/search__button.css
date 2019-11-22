@@ -1,28 +1,54 @@
 .search__button {
     display: block;
     width: 168px;
-    /* box-sizing: border-box; */
+    height: 64px;
+    margin: 0 0 0 auto;
+    box-sizing: border-box;
     background: #2F71E5;
     border: 0;
-box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
-border-radius: 100px;
-    z-index: 2;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    border-radius: 100px;
+    z-index: 3;
     padding: 0;
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 24px;
-/* identical to box height, or 133% */
-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    color: #FFFFFF;
+
 }
 
 .search__button:hover {
     background: #347EFF;
-box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
-cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    cursor: pointer;
 }
 
 .search__button:focus {
-background: #2A65CC;
-box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);}
+    background: #2A65CC;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .search__button {
+        width: 160px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .search__button {
+        width: 80%;
+        margin: 16px 0 0;
+
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .search__button {
+        width: 100%;
+
+    }
+}
