@@ -1,0 +1,14 @@
+.content__wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    background-image: url('../../../images/georgia-de-lotz.png');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}

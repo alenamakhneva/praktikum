@@ -1,6 +1,6 @@
-@import url(./__link/commits__link.css);
-@import url(./__title/commits__title.css);
-@import url(./__slider/commits__slider.css);
+@import url('./__link/commits__link.css');
+@import url('./__title/commits__title.css');
+@import url('./__slider/commits__slider.css');
 
 
 .commits {

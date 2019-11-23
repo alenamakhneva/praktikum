@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    position: relative;
 
 }
 
@@ -13,9 +14,8 @@
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 375px) {
     .search__form {
-        width: 100%;
         flex-direction: column;
     }
 }
