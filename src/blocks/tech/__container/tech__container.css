@@ -5,10 +5,10 @@
     justify-content: start;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .tech__container {
         margin-top: 40px;
-        justify-content: stretch;
+        justify-content: space-evenly;
     }
 }
 

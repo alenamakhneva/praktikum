@@ -9,6 +9,12 @@
 
 }
 
+@media screen and (max-width: 600px) {
+    .author {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .author {
         flex-direction: column;

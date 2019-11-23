@@ -17,10 +17,12 @@
 @media screen and (max-width: 768px) {
     .footer {
         height: 64px;
+        padding: 0 40px;
     }
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 600px) {
     .footer {
         height: 100%;
         padding: 0 16px;

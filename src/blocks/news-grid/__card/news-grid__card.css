@@ -1,5 +1,5 @@
 .news-grid__card {
-    width: 400px;
+    width: 32%;
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
@@ -12,11 +12,6 @@
     cursor: pointer;
 }
 
-@media (max-width: 1280px) {
-    .news-grid__card {
-        width: 32%;
-    }
-}
 
 @media (max-width: 768px) {
     .news-grid__card {

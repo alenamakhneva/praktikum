@@ -1,7 +1,8 @@
 import './about.css';
 import Glide, {
   Controls,
-  Breakpoints
+  Breakpoints,
+  Swipe
 } from '@glidejs/glide/dist/glide.modular.esm'
 
 new Glide('.glide', {
@@ -9,8 +10,19 @@ new Glide('.glide', {
   startAt: 0,
   perView: 3,
   peek: 88,
-  gap: 16,
+  breakpoints: {
+    640: {
+      perView: 1
+    },
+    1024: {
+      perView: 2
+    },
+    1440: {
+      perView: 3
+    }
+  }
 }).mount({
   Controls,
-  Breakpoints
+  Breakpoints,
+  Swipe
 })

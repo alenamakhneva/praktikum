@@ -3,12 +3,13 @@
     margin: 64px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
 @media (max-width: 768px) {
     .news-grid__container {
+        justify-content: space-evenly;
         margin: 32px 0 22px;
     }
 }
