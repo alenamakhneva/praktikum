@@ -4,7 +4,7 @@
 @import url('./__contacts/footer__contacts.css');
 @import url('./__contact/footer__contact.css');
 
-.footer {
+.footer.section {
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -15,18 +15,19 @@
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
+    .footer.section {
+        flex-wrap: wrap;
         height: 64px;
         padding: 0 40px;
     }
 }
 
 
-@media screen and (max-width: 600px) {
-    .footer {
+@media screen and (max-width: 620px) {
+    .footer.section {
+        flex-wrap: wrap;
         height: 100%;
         padding: 0 16px;
-        flex-wrap: wrap;
 
     }
 }

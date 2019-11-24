@@ -1,16 +1,8 @@
+@import url('./_fb/footer__contact_fb.css');
+@import url('./_gh/footer__contact_gh.css');
+
 .footer__contact {
     width: 20px;
     height: 20px;
-    margin-left: 28px;    
-}
-
-.footer__contact_fb {
-    background-image: url('../../../images/fb.png');
-    background-repeat: no-repeat;
-    
-}
-
-.footer__contact_gh {
-    background-image: url('../../../images/github.png');
-    background-repeat: no-repeat;
+    margin-left: 28px;
 }

@@ -1,16 +1,19 @@
 .tech__title {
     color: #1A1B22;
-    margin: 0 12% auto 0;
+    margin-right: auto;
+    width: 30%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .tech__title {
-        margin: 0;
+        margin-bottom: 40px;
+        margin-top: 0;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 375px) {
     .tech__title {
-        margin: 32px 16px 40px;
+        margin: 32px 0 0;
     }
 }

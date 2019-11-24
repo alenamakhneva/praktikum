@@ -2,14 +2,12 @@
 @import url('./__image/noresults__noresults__image.css');
 @import url('./__title/noresults__title.css');
 @import url('./__text/noresults__text.css');
+@import url('./_hidden/noresults_hidden.css');
 
-.noresults {
+
+.noresults.section {
 	display: flex;
 	flex-direction: column;
 	background: #F5F6F7;
-	
-}
 
-.noresults.noresults_hidden {
-	display: none;
 }

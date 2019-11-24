@@ -1,3 +1,6 @@
+@import url('./_focused/header__link_focused.css');
+@import url('./_index/header__link_index.css');
+
 .header__link {
     font-style: normal;
     font-weight: 500;
@@ -7,14 +10,6 @@
     text-decoration: none;
     z-index: 4;
     cursor: pointer;
-}
-
-.header__link.header__link_index {
-    color: white;
-}
-
-.header__link.header__link_focused {
-    color: #1A1B22;
 }
 
 

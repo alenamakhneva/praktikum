@@ -1,6 +1,5 @@
 .section {
     max-width: 100%;
-    overflow: hidden;
     position: relative;
     padding: 80px 104px;
     display: flex;

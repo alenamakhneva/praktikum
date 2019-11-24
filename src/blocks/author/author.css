@@ -3,20 +3,20 @@
 @import url('./__title/author__title.css');
 @import url('./__text/author__text.css');
 
-.author {
+.author.section {
     display: flex;
     flex-direction: row;
 
 }
 
 @media screen and (max-width: 600px) {
-    .author {
+    .author.section {
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .author {
+    .author.section {
         flex-direction: column;
         margin: 0 auto;
     }

@@ -1,16 +1,19 @@
+@import url('./_monday/chart__mentions-number_monday.css');
+@import url('./_tuesday/chart__mentions-number_tuesday.css');
+@import url('./_wednesday/chart__mentions-number_wednesday.css');
+@import url('./_thursday/chart__mentions-number_thursday.css');
+@import url('./_friday/chart__mentions-number_friday.css');
+@import url('./_saturday/chart__mentions-number_saturday.css');
+@import url('./_sunday/chart__mentions-number_sunday.css');
+
 .chart__mentions-number {
-    height: 24px;
     background: #2F71E5;
     padding-left: 6px;
-    /* top: calc(50% - 24px/2); */
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 16px;
-    /* or 133% */
-
+    line-height: 24px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -18,33 +21,4 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #FFFFFF;
-}
-
-/* Временное решение, пока нет JS */
-.chart__mentions-number_monday {
-    width: 15%;
-}
-
-.chart__mentions-number_tuesday {
-    width: 18%;
-}
-
-.chart__mentions-number_wednesday {
-    width: 11%;
-}
-
-.chart__mentions-number_thursday {
-    width: 39%;
-}
-
-.chart__mentions-number_friday {
-    width: 45%;
-}
-
-.chart__mentions-number_saturday {
-    width: 73%;
-}
-
-.chart__mentions-number_sunday {
-    width: 34%;
 }

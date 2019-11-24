@@ -1,6 +1,6 @@
 .footer__copyright {
-    width: 200px;
-    height: 22px;
+    display: flex;
+    position: relative;
     padding-top: 30px;
     font-family: 'Roboto';
     font-style: normal;
@@ -8,15 +8,14 @@
     font-size: 16px;
     line-height: 22px;
     padding: 0;
-    margin: 0;
     color: #B6BCBF;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 720px) {
     .footer__copyright {
         order: 3;
-        padding: 10px 0 22px 0;
-
+        margin: 40px 52% 22px 0;
+        flex-wrap: nowrap;
 
     }
 }

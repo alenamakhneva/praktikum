@@ -1,15 +1,15 @@
 .chart__mentions-bar {
-    display: flex; 
-    justify-items: center; 
+    display: flex;
+    justify-items: center;
     align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     height: 80px;
-    /* or 444% */
 }
 
-.chart__mentions-bar:first-of-type, .chart__mentions-bar:last-of-type {
+.chart__mentions-bar:first-of-type,
+.chart__mentions-bar:last-of-type {
     height: 52px;
     line-height: 80px;
 }

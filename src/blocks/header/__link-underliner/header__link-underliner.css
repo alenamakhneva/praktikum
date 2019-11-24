@@ -1,11 +1,9 @@
+@import url('./_about/header__link-underliner_about.css');
+
 .header__link-underliner {
     margin-top: 20px;
     height: 3px;
     background-color: #FFFFFF;
-}
-
-.header__link-underliner_about {
-    background: #1A1B22;
 }
 
 @media screen and (max-width: 768px) {

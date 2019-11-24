@@ -13,7 +13,7 @@
 @import url('./__mentions-number/chart__mentions-number.css');
 
 
-.chart {
+.chart.section {
     display: flex;
     flex-direction: column;
     background: #F5F6F7;

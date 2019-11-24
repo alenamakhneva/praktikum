@@ -6,15 +6,9 @@
 @import url('./__button/search__button.css');
 
 
-.search {
+.search.section {
     display: flex;
     flex-direction: column;
     z-index: 3;
     padding: 0;
 }
-
-/* @media screen and (max-width: 375px) {
-    .search {
-        height: 480px;
-    }
-} */

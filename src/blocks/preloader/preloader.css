@@ -1,14 +1,14 @@
 @import url('./__caption/preloader__caption.css');
+@import url('./_hidden/preloader_hidden.css');
 
-.preloader {
+
+.preloader.section {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 	height: 122px;
 	background: #F5F6F7;
 	z-index: 2;
-
-	overflow: hidden;
 }
 
 .circle-preloader {
@@ -33,13 +33,9 @@
 	}
 }
 
-.preloader.preloader_hidden {
-	display: none;
-}
-
 
 @media screen and (max-width: 375px) {
-	.preloader {
+	.preloader.section {
 		display: none;
 	}
 }

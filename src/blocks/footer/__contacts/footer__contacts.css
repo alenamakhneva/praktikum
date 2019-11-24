@@ -4,10 +4,9 @@
     padding-top: 30px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 620px) {
     .footer__contacts {
         order: 2;
-        right: 16px;
-        padding: 0 0 40px auto;
+        margin: 0 0 0 auto;
     }
 }
