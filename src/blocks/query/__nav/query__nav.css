@@ -1,0 +1,11 @@
+.query__nav {
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media screen and (max-width: 375px) {
+    .query__nav {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.query__title {
+    margin: 0;
+
+}
+
+@media screen and (max-width: 620px) {
+    .query__title {
+        width: 100%;
+    }
+}

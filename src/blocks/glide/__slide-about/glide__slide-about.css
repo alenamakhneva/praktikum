@@ -1,0 +1,6 @@
+.glide__slide-about {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0;  
+
+}

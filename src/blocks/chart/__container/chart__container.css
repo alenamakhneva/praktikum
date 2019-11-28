@@ -1,0 +1,9 @@
+.chart__container {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 375px) {
+    .chart__container {
+        margin-top: 16px;
+    }
+}

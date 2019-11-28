@@ -1,0 +1,32 @@
+.author__title {
+    margin: 50px auto 24px 0;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 900px) {
+    .author__title {
+        margin: 0 auto 16px 0;
+        padding-top: 0;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author__title {
+        margin: 0 auto 16px 0;
+        padding-top: 0;
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .author__title {
+        margin: 24px auto 10px 0;
+        font-size: 30px;
+
+    }
+}

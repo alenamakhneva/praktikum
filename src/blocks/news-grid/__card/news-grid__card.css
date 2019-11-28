@@ -1,0 +1,27 @@
+.news-grid__card {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 16px;
+    justify-self: center;
+    margin-bottom: 16px;
+}
+
+.news-grid__card:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .news-grid__card {
+        width: 224px;
+    }
+}
+
+@media (max-width: 375px) {
+    .news-grid__card {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}

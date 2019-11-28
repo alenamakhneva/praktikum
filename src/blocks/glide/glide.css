@@ -1,0 +1,10 @@
+@import url('./glide.core.css');
+@import url('./glide.theme.css');
+@import url('./__slide-frame/glide__slide-frame.css');
+@import url('./__slide-date/glide__slide-date.css');
+@import url('./__slide-image/glide__slide-image.css');
+@import url('./__slide-about/glide__slide-about.css');
+@import url('./__slide-contacts/glide__slide-contacts.css');
+@import url('./__slide-name/glide__slide-name.css');
+@import url('./__slide-mail/glide__slide-mail.css');
+@import url('./__slide-text/glide__slide-text.css');

@@ -1,0 +1,21 @@
+.news-grid__container {
+    position: relative;
+    margin: 64px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 768px) {
+    .news-grid__container {
+        justify-content: space-evenly;
+        margin: 32px 0 22px;
+    }
+}
+
+@media (max-width: 375px) {
+    .news-grid__container {
+        margin: 40px auto 12px;
+    }
+}

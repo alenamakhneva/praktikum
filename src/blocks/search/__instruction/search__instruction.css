@@ -1,0 +1,19 @@
+.search__instruction {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 32px auto 64px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .search__instruction {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 16px auto 24px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search__instruction {
+        margin: 56px auto 24px 0;
+    }
+}

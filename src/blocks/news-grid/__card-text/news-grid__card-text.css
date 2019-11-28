@@ -1,0 +1,19 @@
+.news-grid__card-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+
+    display: flex;
+    margin: 0 24px;
+
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 768px) {
+    .news-grid__card-text {
+        margin: 10px 16px;
+    }
+}

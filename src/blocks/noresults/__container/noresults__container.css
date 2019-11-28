@@ -1,0 +1,19 @@
+.noresults__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 6px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+    .noresults__container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .noresults__container {
+        width: 100%;
+    }
+}

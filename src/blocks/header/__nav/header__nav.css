@@ -1,0 +1,20 @@
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 26px auto;
+    z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav {
+        margin: 22px 0 18px auto;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .header__nav {
+        margin: 16px 0 auto;
+        font-size: 16px;
+    }
+}

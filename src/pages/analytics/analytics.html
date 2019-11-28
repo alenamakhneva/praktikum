@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Анализатор новостей - дипломный проект 
+      по фронтенду в Яндекс.Практикуме">
+  <meta name="author" content="Алёна Махнёва">
+  <title>NewsAnalyzer</title>
+  <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css%>">
+
+
+</head>
+
+<body>
+  <div class="content">
+    <header class="header section header_about">
+      <h1 class="header__title title">NewsAnalyzer</h1>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a class="header__link" href="./index.html" rel="noopener noreferrer">Главная</a>
+        </div>
+        <div class="header__nav-item">
+          <a class="header__link" href="./about.html" rel="noopener noreferrer">О
+            проекте</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="query section">
+        <nav class="query__nav">
+          <a href="./index.html" rel="noopener noreferrer" class="query__nav-link">Главная</a>
+          <a href="./analytics.html" rel="noopener noreferrer" class="query__nav-link query__nav-link_analytics">/
+            Аналитика</a>
+        </nav>
+        <div class="query__wrapper">
+          <h2 class="query__title title">Вы спросили:</h2>
+          <span class="query__word title">«Путешествия»</span>
+        </div>
+        <p class="query__info">Новостей за неделю:
+          <span class="query__counter" id="week">34 424</span>
+        </p>
+        <p class="query__info">Упоминаний в заголовках:
+          <span class="query__counter" id="headers">235</span>
+        </p>
+      </section>
+      <section class="chart section">
+        <h2 class="chart__title title">Аналитика по дням</h2>
+        <div class="chart__container">
+          <div class="chart__header">
+            <h3 class="chart__column-title chart__column-title_date">дата <span class="chart__month">(август)</span>
+            </h3>
+            <h3 class="chart__column-title">кол-во упоминаний</h3>
+          </div>
+          <div class="chart__axis-wrapper">
+            <span class="chart__axis-tick chart__axis-tick_zero">0</span>
+            <div class="chart__axis">
+              <span class="chart__axis-tick chart__axis-tick_quarter">25</span>
+              <span class="chart__axis-tick chart__axis-tick_half">50</span>
+              <span class="chart__axis-tick chart__axis-tick_twothird">75</span>
+              <span class="chart__axis-tick chart__axis-tick_hundred">100</span>
+            </div>
+          </div>
+          <div class="chart__data">
+            <div class="chart__dates">
+              <div class="chart__date"><span class="chart__date-figure">19</span>
+                <span class="chart__date-day">, пн</span></div>
+              <div class="chart__date"><span class="chart__date-figure">20</span>
+                <span class="chart__date-day">, вт</span></div>
+              <div class="chart__date"><span class="chart__date-figure">21</span>
+                <span class="chart__date-day">, ср</span></div>
+              <div class="chart__date"><span class="chart__date-figure">22</span>
+                <span class="chart__date-day">, чт</span></div>
+              <div class="chart__date"><span class="chart__date-figure">23</span>
+                <span class="chart__date-day">, пт</span></div>
+              <div class="chart__date"><span class="chart__date-figure">24</span>
+                <span class="chart__date-day">, сб</span></div>
+              <div class="chart__date"><span class="chart__date-figure">25</span>
+                <span class="chart__date-day">, вс</span></div>
+            </div>
+            <div class="chart__mentions">
+              <div class="chart__mentions-bar"><span class="chart__mentions-number chart__mentions-number_monday"
+                  id="monday">15</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number chart__mentions-number_tuesday"
+                  id="tuesday">18</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number chart__mentions-number_wednesday"
+                  id="wednesday">11</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number chart__mentions-number_thursday"
+                  id="thursday">39</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number chart__mentions-number_friday"
+                  id="friday">45</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number chart__mentions-number_saturday"
+                  id="saturday">73</span></div>
+              <div class="chart__mentions-bar"><span class="chart__mentions-number chart__mentions-number_sunday"
+                  id="sunday">34</span></div>
+            </div>
+          </div>
+          <div class="chart__axis-wrapper">
+            <span class="chart__axis-tick chart__axis-tick_zero">0</span>
+            <div class="chart__axis">
+              <span class="chart__axis-tick">25</span>
+              <span class="chart__axis-tick">50</span>
+              <span class="chart__axis-tick">75</span>
+              <span class="chart__axis-tick">100</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <p class="footer__copyright">© 2019 Supersite</p>
+      <nav class="footer__nav">
+        <a href="./index.html" class="footer__nav-link" rel="noopener noreferrer">Главная</a>
+        <a href="./about.html" class="footer__nav-link" rel="noopener noreferrer">О проекте</a>
+        <a href="https://praktikum.yandex.ru/" class="footer__nav-link" rel="noopener noreferrer">Яндекс.Практикум</a>
+      </nav>
+      <address class="footer__contacts">
+        <a href="#" class="footer__contact footer__contact_fb"></a>
+        <a href="#" class="footer__contact footer__contact_gh"></a>
+      </address>
+    </footer>
+  </div>
+  <script src="<%=htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+.glide__slide-contacts {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}

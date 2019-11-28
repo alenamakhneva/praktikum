@@ -1,0 +1,28 @@
+.chart__dates {
+    width: 104px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    /* or 444% */
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 768px) {
+    .chart__dates {
+        width: 104px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .chart__dates {
+        width: 96px;
+        font-size: 18px;
+        line-height: 48px;
+    }
+}

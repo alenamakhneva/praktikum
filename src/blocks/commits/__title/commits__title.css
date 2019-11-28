@@ -1,0 +1,18 @@
+.commits__title {
+    width: 50%;
+    padding-left: 104px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .commits__title {
+        padding: 0 auto 32px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .commits__title {
+        padding: 0 16px 16px;
+        order: 1;
+    }
+}

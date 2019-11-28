@@ -1,0 +1,26 @@
+@import url('./__wrapper/content__wrapper.css');
+
+
+.content {
+    max-width: 1440px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        max-width: 375px;
+    }
+}

@@ -1,0 +1,17 @@
+.author__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+
+    margin: 0 auto 24px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .author__text {
+        margin: 0;
+        padding: 0;
+    }
+}

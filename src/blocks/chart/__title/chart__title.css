@@ -1,0 +1,12 @@
+.chart__title {
+    margin: 0;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 375px) {
+    .chart__title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

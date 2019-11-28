@@ -1,0 +1,11 @@
+.news-grid__form {
+    background-image: url('../../../images/arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+    .news-grid__form {
+        margin: 0 auto 0 0;
+    }
+}

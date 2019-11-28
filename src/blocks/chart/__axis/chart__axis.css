@@ -1,0 +1,13 @@
+.chart__axis {
+    width: calc(100%-104px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.chart__axis-wrapper {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,11 @@
+.clients__title {
+    color: #1A1B22;
+    margin: 0 0 auto;
+}
+
+
+@media screen and (max-width: 375px) {
+    .clients__title {
+        margin: 0;
+    }
+}

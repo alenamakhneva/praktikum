@@ -1,0 +1,21 @@
+.footer__copyright {
+    display: flex;
+    position: relative;
+    padding-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0;
+    color: #B6BCBF;
+}
+
+@media screen and (max-width: 720px) {
+    .footer__copyright {
+        order: 3;
+        margin: 40px 52% 22px 0;
+        flex-wrap: nowrap;
+
+    }
+}

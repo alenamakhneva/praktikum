@@ -1,0 +1,25 @@
+.news-grid__card-link {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: auto 24px 24px;
+    color: #B6BCBF;
+}
+
+@media screen and (max-width: 768px) {
+    .news-grid__card-link {
+        margin: auto 16px 16px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .news-grid__card-link {
+        margin: 12px auto 0 16px;
+    }
+}

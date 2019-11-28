@@ -1,0 +1,23 @@
+@import url('./_zero/chart__axis-tick_zero.css');
+
+.chart__axis-tick {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 16px;
+
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: #B6BCBF;
+}
+
+@media screen and (max-width: 375px) {
+    .chart__axis-tick {
+        display: none;
+    }
+}

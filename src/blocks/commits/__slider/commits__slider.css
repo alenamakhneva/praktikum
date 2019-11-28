@@ -1,0 +1,23 @@
+.commits__slider {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 64px 0 48px;
+    padding: 0;
+    z-index: 3;
+
+}
+
+@media screen and (max-width: 375px) {
+    .commits__slider {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .commits__slider {
+        margin: 0 0 24px 0;
+        order: 2;
+    }
+}
