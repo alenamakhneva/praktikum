@@ -2,7 +2,7 @@
     max-width: 100%;
     position: relative;
     padding: 80px 104px;
-    display: flex;
+    /* display: flex; */
     z-index: 2;
 }
 

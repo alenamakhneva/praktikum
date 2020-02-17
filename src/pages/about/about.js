@@ -1,28 +1,42 @@
 import './about.css';
-import Glide, {
-  Controls,
-  Breakpoints,
-  Swipe
-} from '@glidejs/glide/dist/glide.modular.esm'
+import '../../blocks/glide/glide.js';
+import {
+    URL,
+    slides
+} from '../../js/constants/constants.js'
 
-new Glide('.glide', {
-  type: 'carousel',
-  startAt: 0,
-  perView: 3,
-  peek: 88,
-  breakpoints: {
-    640: {
-      perView: 1
-    },
-    1024: {
-      perView: 2
-    },
-    1440: {
-      perView: 3
-    }
-  }
-}).mount({
-  Controls,
-  Breakpoints,
-  Swipe
-})
+import {
+    handleCommits
+} from '../../js/utils/handleCommits.js'
+
+import GithubApi from '../../js/modules/GithubApi.js'
+import DataStorage from '../../js/modules/DataStorage.js'
+import CommitCardList from '../../js/components/CommitCardList.js'
+import CommitCard from '../../js/components/CommitCard.js'
+
+const dataStorage = new DataStorage()
+
+const commitCard = new CommitCard()
+
+const githubApi = new GithubApi(URL)
+
+const commitCardList = new CommitCardList(slides, commitCard, dataStorage);
+
+window.onload = function () {
+
+    githubApi.getCommits()
+        .then(commits => {
+            if (commits) {
+                handleCommits(commits)
+            }
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+export {
+    dataStorage,
+    commitCardList,
+    commitCard
+}

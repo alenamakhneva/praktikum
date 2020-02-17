@@ -11,7 +11,7 @@
     border-radius: 100px;
     z-index: 3;
     padding: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -30,6 +30,10 @@
 .search__button:focus {
     background: #2A65CC;
     box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+}
+
+.search__button_disabled {
+    background: #F5F6F7;
 }
 
 @media screen and (max-width: 768px) {

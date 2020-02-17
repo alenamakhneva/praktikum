@@ -6,6 +6,7 @@
 @import url('./__button/search__button.css');
 
 
+
 .search.section {
     display: flex;
     flex-direction: column;

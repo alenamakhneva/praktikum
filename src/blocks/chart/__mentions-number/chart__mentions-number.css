@@ -1,15 +1,7 @@
-@import url('./_monday/chart__mentions-number_monday.css');
-@import url('./_tuesday/chart__mentions-number_tuesday.css');
-@import url('./_wednesday/chart__mentions-number_wednesday.css');
-@import url('./_thursday/chart__mentions-number_thursday.css');
-@import url('./_friday/chart__mentions-number_friday.css');
-@import url('./_saturday/chart__mentions-number_saturday.css');
-@import url('./_sunday/chart__mentions-number_sunday.css');
-
 .chart__mentions-number {
     background: #2F71E5;
     padding-left: 6px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;

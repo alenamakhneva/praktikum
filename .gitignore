@@ -2,5 +2,7 @@ dist/
 node_modules/
 .vscode
 .log
+.npm
+npm-debug.log
 DS_Store
 Thumbs.db

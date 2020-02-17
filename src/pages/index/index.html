@@ -34,6 +34,7 @@
           <p class="search__instruction">Введите в поиске любую тему и узнайте, насколько популярной
             она была в новостях за прошедшую неделю.</p>
           <form class="search__form" id="search-form">
+            <span class="search__input-error search__input-error_hidden">Нужно ввести ключевое слово</span>
             <input class="search__input" name="search__input" id="search-input" type="search"
               placeholder="Введите тему новости">
             <button class="search__button" name="search-button" id="search-button">Искать</button>
@@ -42,83 +43,40 @@
       </section>
     </div>
     <main>
-      <section class="preloader section">
-        <i class="circle-preloader"></i>
-        <p class="preloader__caption">Идёт поиск новостей...</p>
-      </section>
-      <section class="noresults section">
-        <div class="noresults__container">
-          <img class="noresults__image" src="<%=require('../../images/not-found_v1.png')%>" alt="sad">
-          <h2 class="noresults__title title">Ничего не найдено</h2>
-          <p class="noresults__text">К сожалению, по вашему запросу ничего не найдено</p>
-        </div>
-      </section>
-      <section class="news-grid section">
-        <div class="news-grid__header">
-          <h2 class="news-grid__title title">Результаты поиска</h2>
-          <form class="news-grid__form" action="./analytics.html" id="analytics" rel="noopener noreferrer">
-            <!-- <input type="hidden" name="date" value="">
-          <input type="hidden" name="lorem" value=""> -->
-            <button type="submit" class="news-grid__link">Посмотреть аналитику</button>
+      <section class="result">
+        <section class="preloader preloader_hidden section">
+          <i class="circle-preloader"></i>
+          <p class="preloader__caption">Идёт поиск новостей...</p>
+        </section>
+        <section class="noresults section noresults_hidden">
+          <div class="noresults__container">
+            <img class="noresults__image" src="<%=require('../../images/not-found_v1.png')%>" alt="sad">
+            <h2 class="noresults__title title error">Ничего не найдено</h2>
+            <p class="noresults__text">К сожалению, по вашему запросу ничего не найдено</p>
+          </div>
+        </section>
+        <section class="news-grid news-grid_hidden section">
+          <div class="news-grid__header">
+            <h2 class="news-grid__title title">Результаты поиска</h2>
+            <form class="news-grid__form" action="./analytics.html" id="analytics" rel="noopener noreferrer">
+              <button type="submit" class="news-grid__link">Посмотреть аналитику</button>
+            </form>
+          </div>
+          <div class="news-grid__container">
+            <!-- <div class="news-grid__card">
+              <img class="news-grid__card-image" src="<%=require('../../images/image_07.png')%>" alt="news-picture">
+              <p class="news-grid__card-date">2 августа, 2019</p>
+              <h3 class="news-grixd__card-title title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+              <p class="news-grid__card-text">Знаменитый фотограф снимает первозданные леса России,
+                чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                тайгу, где...</p>
+              <a href="#" class="news-grid__card-link">Риа</a>
+            </div> -->
+          </div>
+          <form class="news-grid__more" id="grid-form">
+            <button class="news-grid__button" id="grid-button">Показать ещё</button>
           </form>
-        </div>
-        <div class="news-grid__container">
-          <div class="news-grid__card">
-            <img class="news-grid__card-image" src="<%=require('../../images/image_08.png')%>" alt="news-picture">
-            <p class="news-grid__card-date">2 августа, 2019</p>
-            <h3 class="news-grid__card-title title">Национальное достояние – парки</h3>
-            <p class="news-grid__card-text">В 2016 году Америка отмечала важный юбилей: сто лет
-              назад здесь начала складываться система национальных парков – охраняемых территорий,
-              где и сегодня каждый может приобщиться к природе.</p>
-            <a href="#" class="news-grid__card-link">Лента.ру</a>
-          </div>
-          <div class="news-grid__card">
-            <img class="news-grid__card-image" src="<%=require('../../images/image_04.png')%>" alt="news-picture">
-            <p class="news-grid__card-date">2 августа, 2019</p>
-            <h3 class="news-grid__card-title title">Лесные огоньки: история одной фотографии</h3>
-            <p class="news-grid__card-text">Фотограф отвлеклась от освещения суровой политической
-              реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-            <a href="#" class="news-grid__card-link">Медуза</a>
-          </div>
-          <div class="news-grid__card">
-            <img class="news-grid__card-image" src="<%=require('../../images/image_07.png')%>" alt="news-picture">
-            <p class="news-grid__card-date">2 августа, 2019</p>
-            <h3 class="news-grid__card-title title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="news-grid__card-text">Знаменитый фотограф снимает первозданные леса России,
-              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
-              тайгу, где...</p>
-            <a href="#" class="news-grid__card-link">Риа</a>
-          </div>
-          <div class="news-grid__card">
-            <img class="news-grid__card-image" src="<%=require('../../images/image_01.png')%>" alt="news-picture">
-            <p class="news-grid__card-date">2 августа, 2019</p>
-            <h3 class="news-grid__card-title title">Национальное достояние – парки</h3>
-            <p class="news-grid__card-text">В 2016 году Америка отмечала важный юбилей: сто лет
-              назад здесь начала складываться система национальных парков – охраняемых территорий,
-              где и сегодня каждый может приобщиться к природе.</p>
-            <a href="#" class="news-grid__card-link">Лента.ру</a>
-          </div>
-          <div class="news-grid__card">
-            <img class="news-grid__card-image" src="<%=require('../../images/image_05.png')%>" alt="news-picture">
-            <p class="news-grid__card-date">2 августа, 2019</p>
-            <h3 class="news-grid__card-title title">Лесные огоньки: история одной фотографии</h3>
-            <p class="news-grid__card-text">Фотограф отвлеклась от освещения суровой политической
-              реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-            <a href="#" class="news-grid__card-link">Медуза</a>
-          </div>
-          <div class="news-grid__card">
-            <img class="news-grid__card-image" src="<%=require('../../images/image_07.png')%>" alt="news-picture">
-            <p class="news-grid__card-date">2 августа, 2019</p>
-            <h3 class="news-grid__card-title title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="news-grid__card-text">Знаменитый фотограф снимает первозданные леса России,
-              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
-              тайгу, где...</p>
-            <a href="#" class="news-grid__card-link">Риа</a>
-          </div>
-        </div>
-        <form class="news-grid__more" id="grid-form">
-          <button class="news-grid__button" id="grid-button">Показать ещё</button>
-        </form>
+        </section>
       </section>
       <section class="author section">
         <img class="author__avatar" src="<%=require('../../images/image-03.png')%>" alt="avatar">
