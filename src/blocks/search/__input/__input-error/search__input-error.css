@@ -1,0 +1,11 @@
+.search__input-error {
+    color: #FF0000;
+    bottom: -20px;
+    left: 24px;
+    position: absolute;
+    line-height: 10px;
+}
+
+.search__input-error_hidden {
+    display: none;
+}

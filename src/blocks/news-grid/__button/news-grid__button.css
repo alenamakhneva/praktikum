@@ -6,7 +6,7 @@
     height: 64px;
     margin: 0 auto;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -22,4 +22,8 @@
 .news-grid__button:hover {
     opacity: 0.9;
     cursor: pointer;
+}
+
+.news-grid__button_hidden {
+    display: none
 }
