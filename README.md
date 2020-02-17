@@ -10,7 +10,7 @@
 Проект будет опубликован на GitHub Pages
 
 # Как запустить проект
-Загрузите репозиторий: git clone https://github.com/alenamakhneva/praktikum
-Установите npm-зависимости: npm install
-Сборка проекта: npm run build
-Запустить на локальном сервере: npm run dev
+- Загрузите репозиторий: git clone https://github.com/alenamakhneva/praktikum
+- Установите npm-зависимости: npm install
+- Сборка проекта: npm run build
+- Запустить на локальном сервере: npm run dev
