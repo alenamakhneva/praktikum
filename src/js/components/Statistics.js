@@ -84,10 +84,10 @@ export default class Statistics {
             number.textContent = mentions[k]
 
             bar.classList.add('chart__mentions-bar')
-            bar.style.width = `${mentions[k]+'%'}`
+            number.style.width = `${mentions[k]}` + '%'
 
-            bar.appendChild(number);
-            mentionsChart.appendChild(bar);
+            bar.appendChild(number)
+            mentionsChart.appendChild(bar)
         }
     }
 

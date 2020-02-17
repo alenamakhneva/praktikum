@@ -22,6 +22,14 @@ export default class DataStorage {
         return localStorage.getItem('query')
     }
 
+    addCommits(commits) {
+        localStorage.setItem('commits', JSON.stringify(commits))
+    }
+
+    extractCommits(commits) { //извлечь из локального хранилища
+        return JSON.parse(localStorage.getItem('commits'))
+    }
+
     clear() { // очистить хранилище
         localStorage.clear()
     }
